@@ -15,8 +15,8 @@ First of all, If you dont have Python installed on your computer, install it fro
 
 Now, clone the project to your desired location:
 ```
-$ cd \your\desired\path
-$ git clone https://github.com/acarerdinc/classic-wow-alarm.git
+cd \your\desired\path
+git clone https://github.com/acarerdinc/classic-wow-alarm.git
 ```
 or simply download the zip.
 
@@ -24,15 +24,15 @@ Then, you need to download and install [Google's OCR tool Tesseract](https://git
 
 You need to install the required python packages now.
 ```
-$ cd \where\the\project\is
-$ pip install -r requirements.txt
+cd \where\the\project\is
+pip install -r requirements.txt
 ```
 And you are good to go.
 
 ## Usage
 Open up the command prompt and go to where you have installed the program and type the following. You need to have the game up front and running with the queue information visible on the screen for the program to perform as desired. Just drag the command prompt to the corner if you want to see console outputs. Simply press ESC to close the alarm.
 ```
-$ python classic-alarm.py
+python classic-alarm.py
 ```
 
 
