@@ -3,3 +3,4 @@ opencv-contrib-python==4.1.0.25
 mss==4.0.3
 Pillow==6.1.0
 playsound==1.2.2
+pytesseract==0.3.0
