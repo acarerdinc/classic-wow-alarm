@@ -98,7 +98,6 @@ position_th = 50
 while 1:
     img = ca.get_img()
     pos = ca.get_pos(img)
-    print(pos, position_th)
     if pos < position_th:
         print("Queue Up!")
         ca.play_alarm()
