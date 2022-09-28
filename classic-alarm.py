@@ -82,12 +82,19 @@ class ClassicAlarm():
                 print('Cannot read queue information. Check the screen. Last position: {}'.format(self.pos))
             self.reading = False
             self.pos = np.inf
-        return float(self.pos)
+            
+        try:
+            self.pos = float(self.pos)
+        except:
+            pass
+        finally:
+            self.pos = np.inf
+        return self.pos
      
 
 
 ca = ClassicAlarm()
-position_th = 100
+position_th = 3950
 	 
 while 1:
     img = ca.get_img()
