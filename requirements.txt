@@ -1,5 +1,5 @@
 numpy==1.17.1
-opencv-contrib-python==4.1.0.25
+opencv-contrib-python==4.2.0.32
 mss==4.0.3
 Pillow==6.2.0
 playsound==1.2.2
