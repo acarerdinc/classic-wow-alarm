@@ -1,7 +1,7 @@
 numpy==1.17.1
 opencv-contrib-python==4.1.0.25
 mss==4.0.3
-Pillow==6.2.0
+Pillow==9.0.1
 playsound==1.2.2
 pytesseract==0.3.0mss==4.0.3
 numpy==1.17.1
