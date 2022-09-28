@@ -95,4 +95,4 @@ while 1:
     if pos < position_th:
         ca.play_alarm()
         break
-    time.sleep(.1)
+    time.sleep(1)
