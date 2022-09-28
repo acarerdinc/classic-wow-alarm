@@ -48,10 +48,10 @@ class ClassicAlarm():
 		
 		# specify monitor region
         mon = sct.monitors[1:][0]
-        mon['left'] = int(mon['width'] * 0.4)
-        mon['top'] = int(mon['height'] * 0.425)
-        mon['height'] = int(mon['height'] * 0.14)
-        mon['width'] = int(mon['width'] * 0.2)
+        mon['left'] = int(mon['width'] * 0.3)
+        mon['top'] = int(mon['height'] * 0.3)
+        mon['height'] = int(mon['height'] * 0.2)
+        mon['width'] = int(mon['width'] * 0.35)
 
         # get screenshot
         sct_img = sct.grab(mon)
@@ -70,8 +70,10 @@ class ClassicAlarm():
         a = a.replace(':', '')
         words = a.split(' ')
         if 'queue' in words:
-            words.index('queue')
+            #words.index('queue')
             self.pos = words[words.index('queue') + 1]
+            self.pos = self.pos.replace('l', '1')
+            print('Program running... Position in queue: {}         '.format(self.pos), end='\r')
             if not self.reading:
                 print('Queue information is now available again. Program is running as normal. Position: {}'.format(self.pos))
             self.reading = True
@@ -85,7 +87,7 @@ class ClassicAlarm():
 
 
 ca = ClassicAlarm()
-position_th = 50
+position_th = 100
 	 
 while 1:
     img = ca.get_img()
@@ -93,4 +95,4 @@ while 1:
     if pos < position_th:
         ca.play_alarm()
         break
-    time.sleep(1)
+    time.sleep(.1)
